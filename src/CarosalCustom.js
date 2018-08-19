@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -61,14 +60,6 @@ render() {
 			   <Carousel.Item >
 		   	     <div class="row">
 		   {this.state.imageSource}
-			</div>
-
-		   </Carousel.Item>
-		 
-		      <Carousel.Item >
-		   	     <div class="row">
-		    {this.createSecond()}
-		  
 			</div>
 
 		   </Carousel.Item>

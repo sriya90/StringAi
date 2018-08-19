@@ -1,26 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
 $duration = 450ms
 $tileWidth = 250px
 $tileHeight = ($tileWidth / (16/9))
@@ -148,7 +125,8 @@ a:hover
 // * Hover effects
 // *
 
-
+// We assume when you hover .row, you're also hovering a .tile
+// First, move the whole row towards the left
 .row__inner:hover
   transform: translate3d($moveLeft, 0, 0)
 
@@ -167,41 +145,3 @@ a:hover
 .tile:hover ~ .tile
   transform: translate3d($moveRight, 0, 0)
 
-
-.h4
-{
-	 color: white;
-}
-/* Carousel base class */
-.carousel {
-  height: 100px;
-  margin-bottom: 0px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-  text-align: left;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 300px;
-  background-color: #060607;
-}
-.carousel-inner > .item > img {
-  position: relative;
-  top: 0;
-  left: 0;
-  min-width: 100px;
-  height: 100px;
-
-}
-
-.carousel-inner  {
-  -webkit-transform-style: preserve-3d;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
